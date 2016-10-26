@@ -1,0 +1,98 @@
+@media(max-width:1281px) {
+	/*alinhando img secao destaque on desktop*/
+	.secao-destaque .left img {
+		position: relative;
+		left: -1rem;
+	}
+}
+
+@media (max-width: 769px) {
+	/*acompanhar altura confome nav*/
+	header {
+		height: auto;
+	}
+	/*transformando em uma coluna só*/
+	#cabecalho .conteudo {
+		flex-direction: column;
+	}
+	/*classe do grid, espacamento*/
+	.right {
+		margin: 1rem 4rem;
+	}
+	/*alinhando imagem ao centro*/
+	#cabecalho .conteudo .logo {
+		margin: 0 auto;
+	}
+	/*descentralizando itens do menu*/
+	#cabecalho .conteudo .menu {
+		right: 0;
+	}
+	/*colocando menu em colunas*/
+	#cabecalho .conteudo .menu {
+		display: flex;
+		flex-direction: column;
+	}
+	/**/
+	#cabecalho .conteudo .menu a,
+	#cabecalho .conteudo .menu .btn {
+		margin: 1rem 3rem;
+		text-align: center;
+	}
+	/*ajustando altura secao destaque <769*/
+	.secao-destaque {
+		height: 1000px;
+	}
+	.secao-destaque:after {
+		top: 900px;
+	}
+	.largura {
+		max-width: 650px;
+	}
+}
+
+@media(min-width:769px) {
+	/*alinhando img secao destaque on desktop*/
+	.secao-destaque .left img {
+		position: relative;
+		left: -8rem;
+		top: 4rem;
+	}
+	/*espacando conteudo do nav*/
+	.secao-destaque .left,
+	.secao-destaque .right {
+		margin-top: 6rem;
+	}
+	/*espacamento entre a lista da direita*/
+	.secao-destaque .right .lista-vantagens-left {
+		margin-right: 6rem;
+	}
+	/*tamanho para texto quebrar*/
+	.secao-destaque .right .lista-vantagens-right {
+		max-width: 45%;
+	}
+	/*alinhando textoao centro do conteudo*/
+	.secao-right .right h1 {
+		max-width: 80%;
+	}
+	.secao-right .right h2 {
+		max-width: 60%
+	}
+}
+
+@media (max-width:560px) {
+	/*ajustando altura secao destaque <769*/
+	.secao-destaque {
+		height: 800px;
+	}
+	.secao-destaque:after {
+		top: 750px;
+	}
+	.largura {
+		max-width: 550px;
+	}
+	#cabecalho .conteudo .menu a,
+	#cabecalho .conteudo .menu .btn {
+		margin: 1rem 3rem;
+		text-align: center;
+	}
+}

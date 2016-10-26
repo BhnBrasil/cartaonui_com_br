@@ -5,7 +5,18 @@
 		left: -1rem;
 	}
 }
-
+/*setando altura das secoes para altura <=1024*/
+/* @media(max-height:768px){
+	.secao-app {
+		top: 1900px;
+	}
+	.secao-parceiros {
+		top: 2280px;
+	}
+	footer {
+		top: 3200px;
+	}
+} */
 @media (max-width: 769px) {
 	/*acompanhar altura confome nav*/
 	header {
@@ -32,11 +43,20 @@
 		display: flex;
 		flex-direction: column;
 	}
-	/**/
+	/*estilo botoes nav*/
 	#cabecalho .conteudo .menu a,
 	#cabecalho .conteudo .menu .btn {
 		margin: 1rem 3rem;
 		text-align: center;
+	}
+	.secao-ativar .left h1 {
+		max-width: 100%;
+		text-align: center;
+		margin-top: 2rem;
+	}
+	/*afastando conteudo do topo em 768*/
+	.secao-ativar .conteudo {
+		top: 16rem;
 	}
 	/*ajustando altura secao destaque <769*/
 	.secao-destaque {
@@ -47,6 +67,20 @@
 	}
 	.largura {
 		max-width: 650px;
+	}
+	/*alocando a secao para baixo*/
+	.secao-ativar {
+		top: 1800px;
+	}
+	/*secao app, transportando sua posicao para alocar a secao ativar*/
+	.secao-app {
+		top: 3100px;
+	}
+	.secao-parceiros {
+		top: 3280px;
+	}
+	footer {
+		top: 4100px;
 	}
 }
 
@@ -77,13 +111,24 @@
 	.secao-right .right h2 {
 		max-width: 60%
 	}
+	/*secao ativar*/
+	/*espacamento do conteudo*/
+	.secao-ativar {
+		padding-top: 13rem;
+		padding-left: 20rem;
+	}
 }
-
+/*telas maiores q 768 porem menores q 1440*/
+@media(min-width: 770px) and (max-width:1440px) {
+/*secao ativar*/
+	/*espacamento do conteudo*/
+	.secao-ativar {
+		padding-top: 13rem;
+		padding-left: 5rem;
+	}
+}
 @media (max-width:560px) {
 	/*ajustando altura secao destaque <769*/
-	.secao-destaque {
-		height: 800px;
-	}
 	.secao-destaque:after {
 		top: 750px;
 	}

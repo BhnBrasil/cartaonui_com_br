@@ -35,6 +35,10 @@
 	.right {
 		flex: 1 50vw;
 	}
+
+	.largura {
+		max-width: 550px;
+	}
 	/*alinhando conteudo*/
 
 	.center {
@@ -97,6 +101,7 @@
 		position: absolute;
 		background-color: #cdd43d;
 		top: -65px;
+		z-index: -1;
 	}
 
 	.secao-app:after {
@@ -107,22 +112,24 @@
 		position: absolute;
 		background-color: #cdd43d;
 		bottom: -202px;
+		z-index: -1;
 	}
 
 	.secao-parceiros {
-		min-height: 900px;
+		min-height: 700px;
 		height: auto;
-		position: absolute;
+		position: relative;
 		width: 100%;
-		top: 2100px;
+		top: 2220px;
+		z-index: -1;
 	}
 
 	footer {
 		min-height: 200px;
 		height: auto;
 		width: 100%;
-		position: absolute;
-		top: 3000px;
+		position: relative;
+		top: 2020px;
 		background-color: black;
 	}
 	/*estilo header*/
@@ -139,10 +146,8 @@
 		flex: 1 auto;
 	}
 
-	@media (max-width: 769px) {}
-
 	#cabecalho .conteudo .logo img {
-		max-width: 180px;
+		max-width: 220px;
 		width: 100%;
 	}
 	/*nav*/
@@ -179,7 +184,7 @@
 	}
 
 	#cabecalho .conteudo .menu a {
-		font-size: 1.6rem;
+		font-size: 2rem;
 	}
 
 	#cabecalho .conteudo .menu .btn:hover {
@@ -193,10 +198,6 @@
 	background-blend-mode: multiply;
 	max-width: 900px;
 }*/
-
-	.largura-destaque {
-		max-width: 550px;
-	}
 
 	.secao-destaque .right h1 {
 		font-size: 5rem;
@@ -270,9 +271,26 @@
 		display: flex;
 	}
 	/*secao ativar*/
-.largura-ativar{
-	max-width: 750px;
-}
+
+	.topicos-ativar {
+		max-width: 90%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 5rem;
+	}
+
+	.secao-ativar .topicos-ativar p {
+		font-size: 2.5rem;
+		font-weight: 500;
+		color: #323232;
+		margin-left: 3rem;
+	}
+
+	.largura-ativar {
+		max-width: 750px;
+	}
+
 	.secao-ativar .conteudo {
 		position: relative;
 		top: 5rem;
@@ -294,12 +312,13 @@
 		color: #323232;
 		display: inline-block;
 		position: relative;
+		padding-left: 8rem;
 	}
 
 	.icone-lista-1:before {
 		content: '';
 		position: absolute;
-		left: -89px;
+		left: 0px;
 		top: 22px;
 		background: url('../images/icones-beneficios.png') no-repeat;
 		width: 60px;
@@ -309,7 +328,7 @@
 	.icone-lista-2:before {
 		content: '';
 		position: absolute;
-		left: -89px;
+		left: 0px;
 		top: 22px;
 		background: url('../images/icones-beneficios.png') no-repeat 0 -69px;
 		width: 60px;
@@ -319,29 +338,66 @@
 	.icone-lista-3:before {
 		content: '';
 		position: absolute;
-		left: -89px;
+		left: 0px;
 		top: 22px;
 		background: url('../images/icones-beneficios.png') no-repeat 0 -145px;
 		width: 60px;
 		height: 55px;
 	}
 
-	.secao-ativar .left p {
-		font-size: 2.5rem;
-		font-weight: 500;
-		color: $c-topicos-beneficios;
-		margin-left: 10rem;
-	}
-
 	.embalagem img {
 		width: 100%;
 		max-width: 700px;
+	}
+	/*seção app*/
+
+	.celular {
+		width: 650px;
+		position: absolute;
+	}
+
+	.celular img {
+		width: 100%;
+	}
+
+	.onde-baixar h1 {
+		font-size: 5em;
+		font-weight: 800;
+		line-height: 5rem;
+		color: #fff;
+		text-align: center;
+		margin-bottom: 2em;
+	}
+
+	.onde-baixar p {
+		font-size: 2em;
+		font-weight: 500;
+		line-height: 2rem;
+		color: #323232;
+		text-align: center;
+		margin: 40px 0 0 0;
+	}
+
+	.onde-baixar a {
+		position: relative;
+		top: 5rem;
+		left: 7rem;
+		display: inline-block;
+	}
+
+	.onde-baixar img {
+		padding-right: 1rem;
+		max-width: 220px;
+	}
+
+	.onde-baixar img:last-child {
+		max-width: 230px;
 	}
 	/*seção parceiros*/
 
 	.secao-parceiros .center {
 		position: relative;
-		top: 60rem;
+		top: 20rem;
 	}
 
 	.secao-parceiros h1 {

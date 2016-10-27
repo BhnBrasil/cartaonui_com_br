@@ -5,7 +5,11 @@
 		left: -1rem;
 	}
 }
+
+
 /*setando altura das secoes para altura <=1024*/
+
+
 /* @media(max-height:768px){
 	.secao-app {
 		top: 1900px;
@@ -17,6 +21,7 @@
 		top: 3200px;
 	}
 } */
+
 @media (max-width: 769px) {
 	/*acompanhar altura confome nav*/
 	header {
@@ -74,13 +79,71 @@
 	}
 	/*secao app, transportando sua posicao para alocar a secao ativar*/
 	.secao-app {
-		top: 3100px;
+		top: 3220px;
 	}
+	/*subindo a div after*/
+	.secao-app::after {
+		bottom: -90px;
+	}
+	/*afastando secao parceiros da secao app*/
 	.secao-parceiros {
 		top: 3280px;
 	}
 	footer {
-		top: 4100px;
+		top: 3100px;
+	}
+	/*secao app, sumir com img do celular*/
+	.secao-app .left {
+		display: none
+	}
+	/*posicionando imagens de onde baixar o app*/
+	.onde-baixar a {
+		left: 10rem;
+	}
+	.onde-baixar h1 {
+		margin-bottom: 1em;
+	}
+	.onde-baixar img:first-child {
+		margin-bottom: 1rem
+	}
+}
+
+@media (max-width:400px) {
+	.secao-ativar {
+		top: 1600px;
+	}
+	/*secao app, transportando sua posicao para alocar a secao ativar*/
+	.secao-app {
+		top: 2900px;
+	}
+	/*subindo a div after*/
+	.secao-app::after {
+		bottom: -90px;
+	}
+	/*afastando secao parceiros da secao app*/
+	.secao-parceiros {
+		top: 3080px;
+	}
+	footer {
+		top: 2880px;
+	}
+	/*posicionando imagens de onde baixar o app*/
+	.onde-baixar a {
+		left: 4rem;
+	}
+	.icone-lista-1:before,
+	.icone-lista-2:before,
+	.icone-lista-3:before {
+		display: none
+	}
+	.icone-lista-1,
+	.icone-lista-2,
+	.icone-lista-3 {
+		padding-left: 1rem
+	}
+	/*tamanho dos botoes de download*/
+	.onde-baixar img {
+		max-width: 160px;
 	}
 }
 
@@ -115,18 +178,43 @@
 	/*espacamento do conteudo*/
 	.secao-ativar {
 		padding-top: 13rem;
-		padding-left: 20rem;
+		padding-left: 38rem;
+	}
+	/*secao ativar, espacando conteudo*/
+	.celular {
+		left: 55em;
+	}
+	/*centralizando itens da secao app*/
+	.largura {
+		max-width: 550px;
+		position: relative;
+		right: 5em;
+	}
+	/*BACKGROUND PLUS*/
+	.bg-plus-ativar {
+		background-image: url(../images/bg-plus.png);
+		background-repeat: no-repeat;
+		background-position: 100% -14%;
+	}
+	.bg-plus-app {
+		background-image: url(../images/bg-plus.png);
+		background-repeat: no-repeat;
+		background-position: 100% 79%;
 	}
 }
+
+
 /*telas maiores q 768 porem menores q 1440*/
+
 @media(min-width: 770px) and (max-width:1440px) {
-/*secao ativar*/
+	/*secao ativar*/
 	/*espacamento do conteudo*/
 	.secao-ativar {
 		padding-top: 13rem;
 		padding-left: 5rem;
 	}
 }
+
 @media (max-width:560px) {
 	/*ajustando altura secao destaque <769*/
 	.secao-destaque:after {
@@ -139,5 +227,36 @@
 	#cabecalho .conteudo .menu .btn {
 		margin: 1rem 3rem;
 		text-align: center;
+	}
+}
+
+
+/*IPAD LANDSCAPE*/
+
+@media only screen and(min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	.celular {
+		left: 12em;
+	}
+	.secao-ativar {
+		padding-top: 7rem;
+	}
+	/*tamanho dos botoes de download*/
+	.onde-baixar img {
+		max-width: 160px;
+	}
+}
+
+
+/*MACBOOK*/
+
+@media only screen and (min-device-width: 1140px) and (max-device-width: 1280px) and (orientation: landscape) {
+	.celular {
+		left: 15em;
+	}
+}
+
+@media only screen and(min-device-width: 1140px) and (max-device-width: 1281px){
+	.celular {
+		left: 15em;
 	}
 }

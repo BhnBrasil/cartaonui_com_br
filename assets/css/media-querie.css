@@ -101,6 +101,9 @@
 	.onde-baixar img:first-child {
 		margin-bottom: 1rem
 	}
+	.parceiros-logo{
+		width: 100%;
+	}
 }
 @media (max-width:400px) {
 	.secao-ativar {
@@ -119,7 +122,7 @@
 		top: 3080px;
 	}
 	footer {
-		top: 2880px;
+		top: 3280px;
 	}
 	/*posicionando imagens de onde baixar o app*/
 	.onde-baixar a {
@@ -238,6 +241,11 @@
 		left: 15em;
 	}
 }
+@media(max-width:1725px){
+	.celular{
+		left: 30em;
+	}
+}
 @media(max-width: 1441px) {
 	/*secao app, espacando celular do conteudo*/
 	.celular {
@@ -250,7 +258,7 @@
 		left: 20em;
 	}
 }
-@media(min-width: 1450px) {
+@media(min-width: 1750px) {
 	/*secao app, espacando celular do conteudo*/
 	.celular {
 		left: 55em;

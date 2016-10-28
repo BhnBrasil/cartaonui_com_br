@@ -353,10 +353,11 @@
 
 	.celular {
 		width: 650px;
-		position: absolute;
+		position: relative;
 	}
 
 	.celular img {
+		position: absolute;
 		width: 100%;
 	}
 
@@ -432,4 +433,25 @@
 
 	footer a {
 		color: #c5c5c5;
+	}
+
+	@media(max-width: 769px) {
+		.parceiros {
+			width: 100%;
+			margin-left: 5rem
+		}
+	}
+
+	@media(max-width: 480px) {
+		.parceiros {
+			margin-left: 9rem
+		}
+	}
+
+	.secao-parceiros a {
+		display: inline-block
+	}
+
+	.parceiros-logo {
+		max-width: 186px;
 	}

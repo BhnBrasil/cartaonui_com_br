@@ -5,11 +5,7 @@
 		left: -1rem;
 	}
 }
-
-
 /*setando altura das secoes para altura <=1024*/
-
-
 /* @media(max-height:768px){
 	.secao-app {
 		top: 1900px;
@@ -21,7 +17,6 @@
 		top: 3200px;
 	}
 } */
-
 @media (max-width: 769px) {
 	/*acompanhar altura confome nav*/
 	header {
@@ -107,7 +102,6 @@
 		margin-bottom: 1rem
 	}
 }
-
 @media (max-width:400px) {
 	.secao-ativar {
 		top: 1600px;
@@ -146,7 +140,6 @@
 		max-width: 160px;
 	}
 }
-
 @media(min-width:769px) {
 	/*alinhando img secao destaque on desktop*/
 	.secao-destaque .left img {
@@ -180,10 +173,6 @@
 		padding-top: 13rem;
 		padding-left: 38rem;
 	}
-	/*secao ativar, espacando conteudo*/
-	.celular {
-		left: 55em;
-	}
 	/*centralizando itens da secao app*/
 	.largura {
 		max-width: 550px;
@@ -202,10 +191,7 @@
 		background-position: 100% 79%;
 	}
 }
-
-
 /*telas maiores q 768 porem menores q 1440*/
-
 @media(min-width: 770px) and (max-width:1440px) {
 	/*secao ativar*/
 	/*espacamento do conteudo*/
@@ -214,7 +200,6 @@
 		padding-left: 5rem;
 	}
 }
-
 @media (max-width:560px) {
 	/*ajustando altura secao destaque <769*/
 	.secao-destaque:after {
@@ -229,10 +214,7 @@
 		text-align: center;
 	}
 }
-
-
 /*IPAD LANDSCAPE*/
-
 @media only screen and(min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 	.celular {
 		left: 12em;
@@ -245,18 +227,32 @@
 		max-width: 160px;
 	}
 }
-
-
 /*MACBOOK*/
-
 @media only screen and (min-device-width: 1140px) and (max-device-width: 1280px) and (orientation: landscape) {
 	.celular {
 		left: 15em;
 	}
 }
-
-@media only screen and(min-device-width: 1140px) and (max-device-width: 1281px){
+@media only screen and(min-device-width: 1140px) and (max-device-width: 1281px) {
 	.celular {
 		left: 15em;
+	}
+}
+@media(max-width: 1441px) {
+	/*secao app, espacando celular do conteudo*/
+	.celular {
+		left: 30em;
+	}
+}
+@media(max-width: 1280px) {
+	/*secao app, espacando celular do conteudo*/
+	.celular {
+		left: 20em;
+	}
+}
+@media(min-width: 1450px) {
+	/*secao app, espacando celular do conteudo*/
+	.celular {
+		left: 55em;
 	}
 }
